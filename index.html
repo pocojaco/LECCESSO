@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LECCESSO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-banner" id="top-banner">
+    <div class="banner-content" id="banner-text">
+      📢 Open Call — clicca per dettagli! 📢 Open Call — clicca per dettagli! 📢 Open Call — clicca per dettagli! 📢 Open Call — clicca per dettagli!
+    </div>
+  </div>
+
+  <header>
+    <img src="img/logo.png" alt="Leccesso logo" class="logo-img">
+    <img src="img/LECCESSO.svg" alt="Leccesso lettering" class="logo">
+  </header>
+
+  <section class="model3d">
+    <!-- modifica qua per cambiare il modello 3D: sostituisci il file glb -->
+    <model-viewer 
+    src="models/sculpture.glb" 
+    alt="Modello 3D" 
+    auto-rotate 
+    disable-zoom
+    camera-controls>
+  </model-viewer>
+  </section>
+
+  <section class="intro-text">
+    <!-- modifica qua per cambiare il testo di introduzione -->
+    <h1>
+      LECCESSO is the most intimate exhibition space in Italy. Situated inside the bathroom of
+      <a href="https://www.instagram.com/_larsura_/" target="_blank" rel="noopener noreferrer"><u>LARSURA</u></a>,
+      it is a Gloryhole of art, ideas and intervention that don't fit anywhere else. 
+      Free, open and proudly out of space. Anyone can propose a show, just reach out.
+    </h1>
+  </section>
+
+  <section class="gallery">
+    <!-- aggiungi o rimuovi immagini dalla galleria qua -->
+
+    <div class="art-item" data-show="mostra-1">
+      <div class="art-image-wrapper">
+        <img src="img/prima/cover.jpg" alt="Larsura Opening Cover" class="default-img">
+        <img src="img/prima/hover.jpg" alt="Larsura main piece" class="hover-img">
+      </div>
+      <div class="caption-link">
+        <h3>
+          OPEN CALL <br>
+          until <span class="blink">15th May</span>
+        </h3>
+      </div>
+    </div>
+    
+    <div class="art-item" data-show="mostra-1">
+      <div class="art-image-wrapper">
+        <img src="img/prima/cover.jpg" alt="Larsura Opening Cover" class="default-img">
+        <img src="img/prima/hover.jpg" alt="Larsura main piece" class="hover-img">
+      </div>
+      <div class="caption-link">
+        <h3>
+          Larsura Opening <br>
+          13 Aprile - <span class="blink">Ongoing</span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="art-item" data-show="mostra-1">
+      <div class="art-image-wrapper">
+        <img src="img/stay-tuned.jpg" alt="Stay tuned text" class="default-img">
+      <img src="img/stay-tuned-hover.jpg" alt="Stay tuned text hover" class="hover-img">
+      </div>
+    </div>
+
+    <!-- copia/duplica altri blocchi come questo -->
+  </section>
+
+  
+
+  <div class="pre-footer">
+    <img src="img/logo.png" alt="Leccesso logo" class="logo-img">
+    <div class="pre-footer-right">
+      <a>Via santa Maria 5, Correggio (RE), ITALIA</a><br>
+      <a>LUN/GIO 17:30/01:00</a><br>
+      <a>VEN/SAB 17:30/02:00</a><br>
+      <a>DOM 16:00/00:00</a><br>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/leccesso/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+    <a href="mailto:gabinettolarsura@gmail.com">MAIL US</a>
+    <a href="https://www.instagram.com/_larsura_/" target="_blank" rel="noopener noreferrer">LARSURA</a>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <div id="showcase-popup" class="popup-hidden">
+  </div>
+
+
+</body>
+</html>

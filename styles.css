@@ -1,0 +1,412 @@
+/* modifica qua per cambiare il colore del background */
+.top-banner {
+  background-color: #EA5E4B;
+  color: black;
+  font-weight: 100;
+  font-size: 10pt;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+}
+
+.banner-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Impact', 'Arial Black', sans-serif; /* ✅ Font impostato */
+}
+
+body.popup-open header {
+  pointer-events: none; /* non blocca il click sulla X */
+}
+
+body.fullscreen-image-open header,
+body.fullscreen-image-open .top-banner {
+  display: none !important;
+}
+
+.blink {
+  animation: blinkAnim 1s step-start infinite;
+  color: #EA5E4B; /* puoi scegliere un colore più acceso se vuoi */
+}
+
+@keyframes blinkAnim {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  display: flex;
+  top: 30px; /* prima era top: 0 */
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  background: transparent; /* header trasparente */
+  z-index: 10002;
+  mix-blend-mode: exclusion; /* il trucco è applicarlo qui */
+  pointer-events: auto; /* default */
+}
+
+/* TESTO interno */
+.logo {
+  height: 3em; /* ✅ Fa sì che l'immagine segua l'altezza del testo */
+}
+
+.logo-img {
+  height: 3em; /* ✅ Fa sì che l'immagine segua l'altezza del testo */
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/*testi*/
+
+/* LINK E HOVER GLOBALE */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #EA5E4B; /* ✅ Colore hover */
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 100px; /* spazio per il header */
+}
+
+/* MODELLO 3D */
+.model3d {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+model-viewer {
+  width: 100%;
+  height: 80vh;
+
+}
+
+/* INTRO TEXT */
+.intro-text {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.art-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* allinea la didascalia a sinistra */
+  overflow: visible;
+  aspect-ratio: auto; /* rimuove la forzatura quadrata */
+}
+
+.art-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* mantiene la forma quadrata solo sull’immagine */
+  overflow: hidden;
+}
+
+.art-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.art-image-wrapper .hover-img {
+  opacity: 0;
+}
+
+.art-image-wrapper:hover .hover-img {
+  opacity: 1;
+}
+
+.art-image-wrapper:hover .default-img {
+  opacity: 0;
+}
+
+.caption-link {
+  width: 100%;
+  font-size: 16pt;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;   /* allinea orizzontalmente */
+  align-items: center;
+}
+
+/* POPUP FULL SCREEN MOSTRA */
+
+#showcase-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  overflow-y: auto;
+  z-index: 9999;
+  padding: 40px 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#showcase-popup.active {
+  display: flex;
+}
+
+#showcase-popup.slide-out-up {
+  animation: slideOutUp 0.6s ease forwards;
+}
+
+@keyframes slideOutUp {
+  to {
+    transform: translateY(-100%);
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+
+
+.scroll-progress {
+  position: fixed;
+  left: 0;
+  margin-top: -30px; /* spazio per il banner */
+  width: 10px;
+  background-color: #EA5E4B;
+  z-index: 10010;
+  transition: height 0.1s ease;
+}
+
+/* ELEMENTO MOSTRA */
+.popup-item {
+  max-width: 500px;
+  margin: 0 auto 60px;
+  opacity: 0;
+  transform: scale(0.90);
+  transition: all 0.8s ease;
+}
+
+.popup-item.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-item img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.popup-header {
+  max-width: 800px;
+  margin: 150px auto 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.popup-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.popup-header p {
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.popup-close {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  z-index: 10001;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.popup-close:hover {
+  color: #EA5E4B;
+}
+
+.popup-content {
+  padding-bottom: 350px; /* spazio finale */
+}
+
+#fullscreen-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10003;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+#fullscreen-viewer.active {
+  display: flex;
+}
+
+#fullscreen-viewer img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+/* DIDASCALIE */
+.caption {
+  text-align: center;
+  color: #fff;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+.caption h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.caption p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* FOOTER */
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 40px 20px;
+  gap: 20px;
+  text-align: right;
+}
+
+.pre-footer-right a {
+  font-size: 16pt;
+  color: #fff;
+}
+
+/* Logo visivamente a destra */
+.pre-footer img.logo-img {
+  height: 120px;
+  object-fit: contain;
+}
+
+footer {
+  display: grid;                     /* Flexbox attivo */
+  grid-template-columns: 1fr 1fr 1fr; /* Tre colonne flessibili */                  /* ✅ Permette di andare a capo se serve */
+  justify-content: center;          /* ✅ Centra i link orizzontalmente */
+  align-items: center;              /* ✅ Allineamento verticale */
+  width: 97%;
+  padding: 20px;
+  gap: 20px;                         /* ✅ Spazio uniforme tra i link */
+  text-align: center;
+}
+
+/* Posizionamento dei link */
+footer a:nth-child(1) {
+  justify-self: start;
+}
+
+footer a:nth-child(2) {
+  justify-self: center;
+}
+
+footer a:nth-child(3) {
+  justify-self: end;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 32pt;
+  white-space: nowrap;              /* ✅ Evita che il testo si spezzi */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .model3d model-viewer {
+    height: 80vh;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      width: 92%;
+    }
+  
+    footer a {
+      justify-self: center;
+    }
+  }
+}
