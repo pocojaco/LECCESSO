@@ -405,6 +405,14 @@ footer a {
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
+  .art-item .hover-img {
+    display: none !important;
+  }
+
+  .art-item .default-img {
+    opacity: 1 !important;
+  }
+
   header {
     background-color: #111;
     mix-blend-mode: normal;

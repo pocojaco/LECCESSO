@@ -190,23 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    document.querySelectorAll('.art-item').forEach(item => {
-      item.addEventListener('touchstart', () => {
-        item.classList.add('touch-hover');
-      });
-      
-      item.addEventListener('touchend', () => {
-        item.classList.remove('touch-hover');
-      });
-      
-      item.addEventListener('click', () => {
-        item.classList.remove('touch-hover');
-      });
     
-      item.addEventListener('touchcancel', () => {
-        item.classList.remove('touch-hover');
-      });
-    });
 
 
   });
