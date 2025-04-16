@@ -20,6 +20,7 @@ html, body {
   left: 0;
   right: 0;
   z-index: 10001;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner-content {
@@ -221,7 +222,6 @@ model-viewer {
 }
 
 
-
 .scroll-progress {
   position: fixed;
   left: 0;
@@ -390,7 +390,13 @@ footer a {
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
+  header {
+    background-color: #111;
+    mix-blend-mode: normal;
+  }
+
   .logo {
+    padding-right: 20px;
     height: 1.5em; /* ✅ Fa sì che l'immagine segua l'altezza del testo */
   }
   
@@ -425,10 +431,19 @@ footer a {
 
   .popup-close {
     position: fixed;
-    top: 24px;
-    right: 20px;
+    top: 70px;
+    right: 5px;
     font-size: 2.5rem;
+  }
 
+  .scroll-progress {
+    position: fixed;
+    left: 0;
+    margin-top: 50px; /* spazio per il banner */
+    width: 10px;
+    background-color: #EA5E4B;
+    z-index: 10010;
+    transition: height 0.1s ease;
   }
 
   .gallery {

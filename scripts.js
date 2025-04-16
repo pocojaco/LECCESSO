@@ -3,6 +3,17 @@
 console.log("LECCESSO site loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  const banner = document.getElementById("top-banner");
+  if (banner) {
+    banner.addEventListener("click", () => {
+      const item = document.querySelector('[data-show="mostra-2"]');
+      if (item) {
+        item.click(); // Simula il click sull'art-item della mostra 2
+      }
+    });
+  }
+  
     const artItems = document.querySelectorAll(".art-item");
     const popup = document.getElementById("showcase-popup");
   
