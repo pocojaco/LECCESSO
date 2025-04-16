@@ -188,6 +188,21 @@ model-viewer {
   align-items: center;
 }
 
+.art-item .hover-img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.art-item:hover .hover-img,
+.art-item.touch-hover .hover-img {
+  opacity: 1;
+}
+
+.art-item:hover .default-img,
+.art-item.touch-hover .default-img {
+  opacity: 0;
+}
+
 /* POPUP FULL SCREEN MOSTRA */
 
 #showcase-popup {
