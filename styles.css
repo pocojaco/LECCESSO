@@ -265,6 +265,7 @@ model-viewer {
   width: 100%;
   display: block;
   margin-bottom: 15px;
+  z-index: 9000;
 }
 
 .popup-header {
@@ -454,14 +455,15 @@ footer a {
 
   .popup-close {
     position: fixed;
-    top: 70px;
+    top: 90vh;
     right: 5px;
     font-size: 2.5rem;
+    z-index: 10010;
   }
 
   .scroll-progress {
     position: fixed;
-    left: 0;
+   right: 0px;
     margin-top: 50px; /* spazio per il banner */
     width: 10px;
     background-color: #EA5E4B;
