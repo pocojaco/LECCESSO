@@ -256,6 +256,24 @@ model-viewer {
   transition: all 0.8s ease;
 }
 
+.art-button {
+  background-color: #EA5E4B;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px auto 50px auto;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.art-button:hover {
+  background-color: white;
+  color: black;
+}
+
 .popup-item.visible {
   opacity: 1;
   transform: scale(1);
