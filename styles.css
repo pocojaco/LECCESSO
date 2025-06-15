@@ -5,6 +5,7 @@ html, body {
 
 /* modifica qua per cambiare il colore del background */
 .top-banner {
+ 
   background-color: #EA5E4B;
   color: black;
   font-weight: 100;
@@ -12,7 +13,7 @@ html, body {
   overflow: hidden;
   white-space: nowrap;
   height: 30px;
-  display: flex;
+  display: none;  /* flex quando attivo */
   align-items: center;
   cursor: pointer;
   position: fixed;
@@ -70,7 +71,7 @@ body.fullscreen-image-open .top-banner {
 header {
   position: fixed;
   display: flex;
-  top: 30px; /* prima era top: 0 */
+  top: 0px; /* con banner 30px */
   width: 100%;
   padding: 15px;
   justify-content: center;
@@ -473,7 +474,7 @@ footer a {
 
   .popup-close {
     position: fixed;
-    top: 90vh;
+    top: 80vh;
     right: 5px;
     font-size: 2.5rem;
     z-index: 10010;
