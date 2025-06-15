@@ -307,18 +307,23 @@ model-viewer {
 
 .popup-close {
   position: fixed;
-  top: 5px;
-  right: 20px;
-  font-size: 2.5rem;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #EA5E4B;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 14px;
   cursor: pointer;
-  color: #fff;
-  z-index: 10001;
-  padding: 10px;
-  border-radius: 50%;
+  z-index: 10010;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .popup-close:hover {
-  color: #EA5E4B;
+  background-color: white;
+  color: black;
 }
 
 .popup-content {
@@ -470,14 +475,6 @@ footer a {
 
   .popup-header {
     padding: 20px;
-  }
-
-  .popup-close {
-    position: fixed;
-    top: 80vh;
-    right: 5px;
-    font-size: 2.5rem;
-    z-index: 10010;
   }
 
   .scroll-progress {

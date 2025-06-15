@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="popup-header">
               <h2>${mostra.titolo}</h2>
               <p>${mostra.descrizione}</p>
-              <div class="popup-close" id="popup-close">×</div>
+              <button class="popup-close" id="popup-close">close</button>
             </div>
             <div class="popup-content">
             <div id="fullscreen-viewer" class="fullscreen-hidden"></div>
