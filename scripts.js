@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           { img: "img/toylette/Toylette-mostra-leccesso-05.jpg", titolo: "Greed", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-07.jpg", titolo: "Il calcio è uno sport di destra", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-08.jpg", titolo: "Intento Di Essere", artista: "Giuseppe Oliveri", data: "2025" },
-          { img: "img/toylette/Toylette-mostra-leccesso-06.jpg", titolo: "Chill Vecchio", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-06.jpg", titolo: "Crema", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-10.jpg", titolo: "Fuggi da Foggia", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-12.jpg", titolo: "Dixie", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-13.jpg", titolo: "Godzilla", artista: "Giuseppe Oliveri", data: "2025" },
