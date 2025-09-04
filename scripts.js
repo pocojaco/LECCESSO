@@ -36,19 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
       },
 
       "mostra-2": {
-        titolo: "LARSURA OPENING",
-        descrizione: "In the heart of the bathroom, a new era begins: Larsura. This exhibition is an ode to thirst, to the heat that disorients, to the longing that is not just for water, but for the soul. Amidst the sanitary fixtures bearing witness to silence and held breaths, the displayed works glorify the bar’s birth as a mirage in the desert. Inside, everything sweats. Even the art.",
+        titolo: "TOYLETTE",
+        descrizione: "Toylette is born from an act of return: rediscovering the toys of childhood. Playful companions and silent guardians of the potty that filled our days, our rooms, our imagination. Some were partners in adventure, others quiet presences. Exhibiting them today in such an intimate place means bringing them back into dialogue with that past that shaped us without our knowing.",
         opere: [
-          { img: "img/prima/opere-opening-05.jpg", titolo: "Carpi Bridge", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-04.jpg", titolo: "Oasi", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-06.jpg", titolo: "Always drink during the hottest hour", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-07.jpg", titolo: "Hot XXX", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-08.jpg", titolo: "Kinotto", artista: "Skiantos", data: "1974" },
-          { img: "img/prima/opere-opening-09.jpg", titolo: "Second opening", artista: "Unknown Artist", data: "2025"},
-          { img: "img/prima/opere-opening-10.jpg", titolo: "Arsura, Romania", artista: "source: Wikipedia" },
-          { img: "img/prima/opere-opening-11.jpg", titolo: "Arsura V.I.P.", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-12.jpg", titolo: "Portobello", artista: "Unknown Artist", data: "2025" },
-          { img: "img/prima/opere-opening-13.jpg", titolo: "Le Fauci Secche", artista: "Unknown Artist", data: "2025"  },
+          { img: "img/toylette/Toylette-mostra-leccesso-11.jpg", titolo: "Chill Vecchio", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-04.jpg", titolo: "Fony", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-09.jpg", titolo: "Goldrake", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-05.jpg", titolo: "Greed", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-07.jpg", titolo: "Il calcio è uno sport di destra", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-08.jpg", titolo: "Intento Di Essere", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-06.jpg", titolo: "Chill Vecchio", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-10.jpg", titolo: "Fuggi da Foggia", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-12.jpg", titolo: "Dixie", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-13.jpg", titolo: "Godzilla", artista: "Giuseppe Oliveri", data: "2025" },
+          { img: "img/toylette/Toylette-mostra-leccesso-03.jpg", titolo: "Free Palestine", artista: "Giuseppe Oliveri", data: "2025" },
         ]
       }
 
