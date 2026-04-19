@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("top-banner");
   if (banner) {
     banner.addEventListener("click", () => {
-      const item = document.querySelector('[data-show="mostra-2"]');
+      const item = document.querySelector('[data-show="mostra-3"]');
       if (item) {
         item.click(); // Simula il click sull'art-item della mostra 2
       }
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
           { img: "img/visual-fragments/vf-mostra-leccesso-11.jpg", titolo: "Techno Bucolica", artista: "Benedetta Giugni", data: "2024" },
           { img: "img/visual-fragments/vf-mostra-leccesso-12.jpg", titolo: "Acqua", artista: "Benedetta Giugni", data: "2024" },
         ]
-      }
+      },
 
       
     };
