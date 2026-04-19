@@ -51,6 +51,25 @@ document.addEventListener("DOMContentLoaded", () => {
           { img: "img/toylette/Toylette-mostra-leccesso-13.jpg", titolo: "Godzilla", artista: "Giuseppe Oliveri", data: "2025" },
           { img: "img/toylette/Toylette-mostra-leccesso-03.jpg", titolo: "Free Palestine", artista: "Giuseppe Oliveri", data: "2025" },
         ]
+      },
+
+      "mostra-3": {
+        titolo: "flaconedivetro VISUAL FRAGMENTS",
+        descrizione: "How many pieces it takes to create a story is never known, how many rags, how much silk, how much iron or copper. What is known is that the final result always remains faithful to the pulsing sensation, to the urge to unfold, to the warmth of being understood. How many layers it takes to cover a story and transform it is never known, how many colors, how much white, how many blurs or sharp edges. What is known is that layering is always perfect, because it is impossible to hide the steps, the leaps, and the flips taken to arrive at the cover.",
+        opere: [
+          { img: "img/visual-fragments/vf-mostra-leccesso-01.jpg", titolo: "Giorni Felici", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-02.jpg", titolo: "Lonely People", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-03.jpg", titolo: "La Revoluciòn", artista: "Benedetta Giugni", data: "2025" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-04.jpg", titolo: "Il Pilota", artista: "Benedetta Giugni", data: "2026" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-05.jpg", titolo: "Lonely People video", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-06.jpg", titolo: "Techno Bucolica Video", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-07.jpg", titolo: "Briciole", artista: "Benedetta Giugni", data: "2025" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-08.jpg", titolo: "Marì", artista: "Benedetta Giugni", data: "2023" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-09.jpg", titolo: "Techno Bucolica Video", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-10.jpg", titolo: "Pugni", artista: "Benedetta Giugni", data: "2026" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-11.jpg", titolo: "Techno Bucolica", artista: "Benedetta Giugni", data: "2024" },
+          { img: "img/visual-fragments/vf-mostra-leccesso-12.jpg", titolo: "Acqua", artista: "Benedetta Giugni", data: "2024" },
+        ]
       }
 
       
