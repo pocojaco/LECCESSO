@@ -164,18 +164,22 @@ model-viewer {
   top: 0;
   left: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .art-image-wrapper .hover-img {
   opacity: 0;
+  pointer-events: none;
 }
 
 .art-image-wrapper:hover .hover-img {
   opacity: 1;
+  pointer-events: none;
 }
 
 .art-image-wrapper:hover .default-img {
   opacity: 0;
+  pointer-events: none;
 }
 
 .caption-link {

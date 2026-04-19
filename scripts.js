@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("top-banner");
   if (banner) {
     banner.addEventListener("click", () => {
-      const item = document.querySelector('[data-show="mostra-3"]');
+      const item = document.querySelector('[data-show="mostra-2"]');
       if (item) {
         item.click(); // Simula il click sull'art-item della mostra 2
       }
